@@ -1,0 +1,4960 @@
+{
+    "summary": {
+        "overallLineCoverage": 14.0,
+        "overallBranchCoverage": 82.6,
+        "javaCoverage": 98.18,
+        "cppCoverage": 30.76,
+        "totalFiles": 126,
+        "coveredFiles": 52,
+        "partiallyCoveredFiles": 36,
+        "uncoveredFiles": 38,
+        "totalTests": 0,
+        "passedTests": 0,
+        "failedTests": 0,
+        "qualityGate": "ERROR"
+    },
+    "java": {
+        "lineCoverage": 98.18,
+        "branchCoverage": 82.61,
+        "instructionCoverage": 98.78,
+        "methodCoverage": 97.44,
+        "classCoverage": 100.0,
+        "linesCovered": 324,
+        "linesMissed": 6,
+        "branchesCovered": 38,
+        "branchesMissed": 8,
+        "modules": [
+            {
+                "name": "Basket.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/entity/Basket.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 4,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Type.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/entity/Type.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "BasketItem.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/entity/BasketItem.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Product.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/entity/Product.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Brand.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/entity/Brand.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "MyConfig.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/config/MyConfig.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 8,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "CorsConfig.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/config/CorsConfig.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 6,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "SecurityConfig.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/config/SecurityConfig.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 14,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "BrandServiceImpl.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/service/BrandServiceImpl.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 15,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "BasketService.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/service/BasketService.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "ProductServiceImpl.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/service/ProductServiceImpl.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 60,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "TypeService.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/service/TypeService.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "BrandService.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/service/BrandService.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "TypeServiceImpl.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/service/TypeServiceImpl.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 15,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "ProductService.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/service/ProductService.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "BasketServiceImpl.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/service/BasketServiceImpl.java",
+                "language": "Java",
+                "lineCoverage": 97.83,
+                "branchCoverage": 75.0,
+                "coveredLines": 45,
+                "missedLines": 1,
+                "coveredBranches": 3,
+                "missedBranches": 1,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "SportscenterApplication.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/SportscenterApplication.java",
+                "language": "Java",
+                "lineCoverage": 33.33,
+                "branchCoverage": 0.0,
+                "coveredLines": 1,
+                "missedLines": 2,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "BasketController.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/controller/BasketController.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 27,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "AuthConroller.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/controller/AuthConroller.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 83.33,
+                "coveredLines": 28,
+                "missedLines": 0,
+                "coveredBranches": 5,
+                "missedBranches": 1,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "ProductController.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/controller/ProductController.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 90.91,
+                "coveredLines": 37,
+                "missedLines": 0,
+                "coveredBranches": 20,
+                "missedBranches": 2,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "CustomExceptionHandler.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/exceptions/CustomExceptionHandler.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 3,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "ProductNotFoundException.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/exceptions/ProductNotFoundException.java",
+                "language": "Java",
+                "lineCoverage": 50.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 2,
+                "missedLines": 2,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "JwtAuthenticationFilter.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/security/JwtAuthenticationFilter.java",
+                "language": "Java",
+                "lineCoverage": 96.43,
+                "branchCoverage": 70.0,
+                "coveredLines": 27,
+                "missedLines": 1,
+                "coveredBranches": 7,
+                "missedBranches": 3,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "JwtAuthenticationEntryPoint.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/security/JwtAuthenticationEntryPoint.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 5,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "JwtHelper.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/security/JwtHelper.java",
+                "language": "Java",
+                "lineCoverage": 100.0,
+                "branchCoverage": 75.0,
+                "coveredLines": 27,
+                "missedLines": 0,
+                "coveredBranches": 3,
+                "missedBranches": 1,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "TypeResponse.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/model/TypeResponse.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "BasketItemResponse.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/model/BasketItemResponse.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "JwtResponse.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/model/JwtResponse.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "ProductResponse.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/model/ProductResponse.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "BrandResponse.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/model/BrandResponse.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "CustomErrorResponse.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/model/CustomErrorResponse.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "BasketResponse.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/model/BasketResponse.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "JwtRequest.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/model/JwtRequest.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "BrandRepository.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/repository/BrandRepository.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "BasketRepository.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/repository/BasketRepository.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "TypeRepository.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/repository/TypeRepository.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "ProductRepository.java",
+                "path": "src/main/java/com/ecoomerce/sportscenter/repository/ProductRepository.java",
+                "language": "Java",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            }
+        ]
+    },
+    "cpp": {
+        "lineCoverage": 30.76,
+        "branchCoverage": 13.98,
+        "functionCoverage": 100.0,
+        "linesCovered": 2902,
+        "linesMissed": 6533,
+        "branchesCovered": 2065,
+        "branchesMissed": 12703,
+        "modules": [
+            {
+                "name": "clientProgram.cpp",
+                "path": "Client/clientProgram.cpp",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 42,
+                "coveredBranches": 0,
+                "missedBranches": 59,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Admin.cpp",
+                "path": "Client/Headers/Admin.cpp",
+                "language": "C++",
+                "lineCoverage": 31.58,
+                "branchCoverage": 18.04,
+                "coveredLines": 90,
+                "missedLines": 195,
+                "coveredBranches": 103,
+                "missedBranches": 468,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Admin.h",
+                "path": "Client/Headers/Admin.h",
+                "language": "C++",
+                "lineCoverage": 50.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 1,
+                "missedLines": 1,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "Cash.h",
+                "path": "Client/Headers/Cash.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 8,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Client.cpp",
+                "path": "Client/Headers/Client.cpp",
+                "language": "C++",
+                "lineCoverage": 58.33,
+                "branchCoverage": 16.67,
+                "coveredLines": 21,
+                "missedLines": 15,
+                "coveredBranches": 5,
+                "missedBranches": 25,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "Client.h",
+                "path": "Client/Headers/Client.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 2,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 4,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Customer.cpp",
+                "path": "Client/Headers/Customer.cpp",
+                "language": "C++",
+                "lineCoverage": 24.43,
+                "branchCoverage": 15.04,
+                "coveredLines": 32,
+                "missedLines": 99,
+                "coveredBranches": 34,
+                "missedBranches": 192,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Customer.h",
+                "path": "Client/Headers/Customer.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 2,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Employee.cpp",
+                "path": "Client/Headers/Employee.cpp",
+                "language": "C++",
+                "lineCoverage": 27.91,
+                "branchCoverage": 12.65,
+                "coveredLines": 36,
+                "missedLines": 93,
+                "coveredBranches": 32,
+                "missedBranches": 221,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Employee.h",
+                "path": "Client/Headers/Employee.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 2,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Person.cpp",
+                "path": "Client/Headers/Person.cpp",
+                "language": "C++",
+                "lineCoverage": 21.45,
+                "branchCoverage": 18.51,
+                "coveredLines": 65,
+                "missedLines": 238,
+                "coveredBranches": 72,
+                "missedBranches": 317,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Person.h",
+                "path": "Client/Headers/Person.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 7,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "serverProgram.cpp",
+                "path": "Server/serverProgram.cpp",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 35,
+                "coveredBranches": 0,
+                "missedBranches": 31,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Admin.cpp",
+                "path": "Server/Headers/Admin.cpp",
+                "language": "C++",
+                "lineCoverage": 53.28,
+                "branchCoverage": 37.02,
+                "coveredLines": 146,
+                "missedLines": 128,
+                "coveredBranches": 194,
+                "missedBranches": 330,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "Admin.h",
+                "path": "Server/Headers/Admin.h",
+                "language": "C++",
+                "lineCoverage": 50.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 1,
+                "missedLines": 1,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "Cash.h",
+                "path": "Server/Headers/Cash.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 10,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Complaint_Base.cpp",
+                "path": "Server/Headers/Complaint_Base.cpp",
+                "language": "C++",
+                "lineCoverage": 98.84,
+                "branchCoverage": 52.73,
+                "coveredLines": 85,
+                "missedLines": 1,
+                "coveredBranches": 58,
+                "missedBranches": 52,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Complaint_Base.h",
+                "path": "Server/Headers/Complaint_Base.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 2,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Complaint_C.h",
+                "path": "Server/Headers/Complaint_C.h",
+                "language": "C++",
+                "lineCoverage": 75.0,
+                "branchCoverage": 50.0,
+                "coveredLines": 9,
+                "missedLines": 3,
+                "coveredBranches": 1,
+                "missedBranches": 1,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "Complaint_E.cpp",
+                "path": "Server/Headers/Complaint_E.cpp",
+                "language": "C++",
+                "lineCoverage": 97.3,
+                "branchCoverage": 42.42,
+                "coveredLines": 36,
+                "missedLines": 1,
+                "coveredBranches": 28,
+                "missedBranches": 38,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Complaint_E.h",
+                "path": "Server/Headers/Complaint_E.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 1,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Customer.cpp",
+                "path": "Server/Headers/Customer.cpp",
+                "language": "C++",
+                "lineCoverage": 56.58,
+                "branchCoverage": 27.78,
+                "coveredLines": 43,
+                "missedLines": 33,
+                "coveredBranches": 25,
+                "missedBranches": 65,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "Customer.h",
+                "path": "Server/Headers/Customer.h",
+                "language": "C++",
+                "lineCoverage": 50.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 1,
+                "missedLines": 1,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "Employee.cpp",
+                "path": "Server/Headers/Employee.cpp",
+                "language": "C++",
+                "lineCoverage": 35.56,
+                "branchCoverage": 14.96,
+                "coveredLines": 32,
+                "missedLines": 58,
+                "coveredBranches": 19,
+                "missedBranches": 108,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Employee.h",
+                "path": "Server/Headers/Employee.h",
+                "language": "C++",
+                "lineCoverage": 50.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 1,
+                "missedLines": 1,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "Person.cpp",
+                "path": "Server/Headers/Person.cpp",
+                "language": "C++",
+                "lineCoverage": 33.33,
+                "branchCoverage": 18.99,
+                "coveredLines": 93,
+                "missedLines": 186,
+                "coveredBranches": 120,
+                "missedBranches": 512,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Person.h",
+                "path": "Server/Headers/Person.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 1,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Server.cpp",
+                "path": "Server/Headers/Server.cpp",
+                "language": "C++",
+                "lineCoverage": 30.1,
+                "branchCoverage": 8.67,
+                "coveredLines": 31,
+                "missedLines": 72,
+                "coveredBranches": 13,
+                "missedBranches": 137,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Server.h",
+                "path": "Server/Headers/Server.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 75.0,
+                "coveredLines": 1,
+                "missedLines": 0,
+                "coveredBranches": 3,
+                "missedBranches": 1,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "Thread.cpp",
+                "path": "Server/Headers/Thread.cpp",
+                "language": "C++",
+                "lineCoverage": 21.88,
+                "branchCoverage": 7.69,
+                "coveredLines": 14,
+                "missedLines": 50,
+                "coveredBranches": 2,
+                "missedBranches": 24,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "Thread.h",
+                "path": "Server/Headers/Thread.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 7,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "gmock-cardinalities.h",
+                "path": "build/_deps/googletest-src/googlemock/include/gmock/gmock-cardinalities.h",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 14,
+                "coveredBranches": 0,
+                "missedBranches": 4,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gmock-matchers.h",
+                "path": "build/_deps/googletest-src/googlemock/include/gmock/gmock-matchers.h",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 9,
+                "coveredBranches": 0,
+                "missedBranches": 12,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gmock-spec-builders.h",
+                "path": "build/_deps/googletest-src/googlemock/include/gmock/gmock-spec-builders.h",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 46,
+                "coveredBranches": 0,
+                "missedBranches": 14,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gmock-internal-utils.h",
+                "path": "build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-internal-utils.h",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 10,
+                "coveredBranches": 0,
+                "missedBranches": 4,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gmock-cardinalities.cc",
+                "path": "build/_deps/googletest-src/googlemock/src/gmock-cardinalities.cc",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 53,
+                "coveredBranches": 0,
+                "missedBranches": 104,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gmock-internal-utils.cc",
+                "path": "build/_deps/googletest-src/googlemock/src/gmock-internal-utils.cc",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 82,
+                "coveredBranches": 0,
+                "missedBranches": 134,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gmock-matchers.cc",
+                "path": "build/_deps/googletest-src/googlemock/src/gmock-matchers.cc",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 198,
+                "coveredBranches": 0,
+                "missedBranches": 300,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gmock-spec-builders.cc",
+                "path": "build/_deps/googletest-src/googlemock/src/gmock-spec-builders.cc",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 346,
+                "coveredBranches": 0,
+                "missedBranches": 363,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gmock.cc",
+                "path": "build/_deps/googletest-src/googlemock/src/gmock.cc",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 69,
+                "coveredBranches": 0,
+                "missedBranches": 102,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gmock_main.cc",
+                "path": "build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 0,
+                "missedLines": 4,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-assertion-result.h",
+                "path": "build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h",
+                "language": "C++",
+                "lineCoverage": 3.41,
+                "branchCoverage": 0.0,
+                "coveredLines": 3,
+                "missedLines": 85,
+                "coveredBranches": 0,
+                "missedBranches": 166,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-matchers.h",
+                "path": "build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 288,
+                "coveredBranches": 0,
+                "missedBranches": 164,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-message.h",
+                "path": "build/_deps/googletest-src/googletest/include/gtest/gtest-message.h",
+                "language": "C++",
+                "lineCoverage": 16.16,
+                "branchCoverage": 20.37,
+                "coveredLines": 32,
+                "missedLines": 166,
+                "coveredBranches": 11,
+                "missedBranches": 43,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-printers.h",
+                "path": "build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 161,
+                "coveredBranches": 0,
+                "missedBranches": 42,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-test-part.h",
+                "path": "build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h",
+                "language": "C++",
+                "lineCoverage": 64.71,
+                "branchCoverage": 42.86,
+                "coveredLines": 11,
+                "missedLines": 6,
+                "coveredBranches": 6,
+                "missedBranches": 8,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "gtest.h",
+                "path": "build/_deps/googletest-src/googletest/include/gtest/gtest.h",
+                "language": "C++",
+                "lineCoverage": 48.15,
+                "branchCoverage": 14.86,
+                "coveredLines": 104,
+                "missedLines": 112,
+                "coveredBranches": 33,
+                "missedBranches": 189,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "gtest-death-test-internal.h",
+                "path": "build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 11,
+                "coveredBranches": 0,
+                "missedBranches": 2,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-filepath.h",
+                "path": "build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h",
+                "language": "C++",
+                "lineCoverage": 50.0,
+                "branchCoverage": 50.0,
+                "coveredLines": 6,
+                "missedLines": 6,
+                "coveredBranches": 2,
+                "missedBranches": 2,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "gtest-internal.h",
+                "path": "build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h",
+                "language": "C++",
+                "lineCoverage": 73.89,
+                "branchCoverage": 23.38,
+                "coveredLines": 167,
+                "missedLines": 59,
+                "coveredBranches": 173,
+                "missedBranches": 567,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "gtest-param-util.h",
+                "path": "build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h",
+                "language": "C++",
+                "lineCoverage": 36.36,
+                "branchCoverage": 12.5,
+                "coveredLines": 4,
+                "missedLines": 7,
+                "coveredBranches": 1,
+                "missedBranches": 7,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-port.h",
+                "path": "build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h",
+                "language": "C++",
+                "lineCoverage": 35.48,
+                "branchCoverage": 14.81,
+                "coveredLines": 44,
+                "missedLines": 80,
+                "coveredBranches": 8,
+                "missedBranches": 46,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-assertion-result.cc",
+                "path": "build/_deps/googletest-src/googletest/src/gtest-assertion-result.cc",
+                "language": "C++",
+                "lineCoverage": 5.56,
+                "branchCoverage": 0.0,
+                "coveredLines": 1,
+                "missedLines": 17,
+                "coveredBranches": 0,
+                "missedBranches": 24,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-death-test.cc",
+                "path": "build/_deps/googletest-src/googletest/src/gtest-death-test.cc",
+                "language": "C++",
+                "lineCoverage": 0.69,
+                "branchCoverage": 0.14,
+                "coveredLines": 2,
+                "missedLines": 288,
+                "coveredBranches": 1,
+                "missedBranches": 703,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-filepath.cc",
+                "path": "build/_deps/googletest-src/googletest/src/gtest-filepath.cc",
+                "language": "C++",
+                "lineCoverage": 15.65,
+                "branchCoverage": 8.18,
+                "coveredLines": 18,
+                "missedLines": 97,
+                "coveredBranches": 18,
+                "missedBranches": 202,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-internal-inl.h",
+                "path": "build/_deps/googletest-src/googletest/src/gtest-internal-inl.h",
+                "language": "C++",
+                "lineCoverage": 54.88,
+                "branchCoverage": 15.05,
+                "coveredLines": 118,
+                "missedLines": 97,
+                "coveredBranches": 31,
+                "missedBranches": 175,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "gtest-matchers.cc",
+                "path": "build/_deps/googletest-src/googletest/src/gtest-matchers.cc",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 22,
+                "coveredBranches": 0,
+                "missedBranches": 80,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-port.cc",
+                "path": "build/_deps/googletest-src/googletest/src/gtest-port.cc",
+                "language": "C++",
+                "lineCoverage": 22.08,
+                "branchCoverage": 7.72,
+                "coveredLines": 102,
+                "missedLines": 360,
+                "coveredBranches": 55,
+                "missedBranches": 657,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-printers.cc",
+                "path": "build/_deps/googletest-src/googletest/src/gtest-printers.cc",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 460,
+                "coveredBranches": 0,
+                "missedBranches": 263,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-test-part.cc",
+                "path": "build/_deps/googletest-src/googletest/src/gtest-test-part.cc",
+                "language": "C++",
+                "lineCoverage": 8.57,
+                "branchCoverage": 8.0,
+                "coveredLines": 3,
+                "missedLines": 32,
+                "coveredBranches": 4,
+                "missedBranches": 46,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest-typed-test.cc",
+                "path": "build/_deps/googletest-src/googletest/src/gtest-typed-test.cc",
+                "language": "C++",
+                "lineCoverage": 0.0,
+                "branchCoverage": 0.0,
+                "coveredLines": 0,
+                "missedLines": 37,
+                "coveredBranches": 0,
+                "missedBranches": 70,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest.cc",
+                "path": "build/_deps/googletest-src/googletest/src/gtest.cc",
+                "language": "C++",
+                "lineCoverage": 27.37,
+                "branchCoverage": 9.47,
+                "coveredLines": 767,
+                "missedLines": 2035,
+                "coveredBranches": 473,
+                "missedBranches": 4521,
+                "status": "CRITICAL",
+                "riskLevel": "HIGH",
+                "heatmapColor": "RED"
+            },
+            {
+                "name": "gtest_main.cc",
+                "path": "build/_deps/googletest-src/googletest/src/gtest_main.cc",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 4,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "MockClient.h",
+                "path": "tests/common/MockClient.h",
+                "language": "C++",
+                "lineCoverage": 87.5,
+                "branchCoverage": 50.0,
+                "coveredLines": 21,
+                "missedLines": 3,
+                "coveredBranches": 12,
+                "missedBranches": 12,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "MockThread.h",
+                "path": "tests/common/MockThread.h",
+                "language": "C++",
+                "lineCoverage": 45.45,
+                "branchCoverage": 5.56,
+                "coveredLines": 10,
+                "missedLines": 12,
+                "coveredBranches": 1,
+                "missedBranches": 17,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "stdin_redirect.h",
+                "path": "tests/common/stdin_redirect.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 50.0,
+                "coveredLines": 4,
+                "missedLines": 0,
+                "coveredBranches": 1,
+                "missedBranches": 1,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_helpers.h",
+                "path": "tests/common/test_helpers.h",
+                "language": "C++",
+                "lineCoverage": 92.31,
+                "branchCoverage": 50.0,
+                "coveredLines": 12,
+                "missedLines": 1,
+                "coveredBranches": 9,
+                "missedBranches": 9,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_runtime.cpp",
+                "path": "tests/common/test_runtime.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 0,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_workspace.h",
+                "path": "tests/common/test_workspace.h",
+                "language": "C++",
+                "lineCoverage": 96.55,
+                "branchCoverage": 51.79,
+                "coveredLines": 28,
+                "missedLines": 1,
+                "coveredBranches": 29,
+                "missedBranches": 27,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Admin.cpp",
+                "path": "tests/testClient/Headers/test_Admin.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 38.89,
+                "coveredLines": 78,
+                "missedLines": 0,
+                "coveredBranches": 70,
+                "missedBranches": 110,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Admin.h",
+                "path": "tests/testClient/Headers/test_Admin.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 8,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Cash.cpp",
+                "path": "tests/testClient/Headers/test_Cash.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 20.0,
+                "coveredLines": 16,
+                "missedLines": 0,
+                "coveredBranches": 4,
+                "missedBranches": 16,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Client.cpp",
+                "path": "tests/testClient/Headers/test_Client.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 32.61,
+                "coveredLines": 16,
+                "missedLines": 0,
+                "coveredBranches": 15,
+                "missedBranches": 31,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Customer.cpp",
+                "path": "tests/testClient/Headers/test_Customer.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 32.5,
+                "coveredLines": 33,
+                "missedLines": 0,
+                "coveredBranches": 26,
+                "missedBranches": 54,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Employee.cpp",
+                "path": "tests/testClient/Headers/test_Employee.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 32.26,
+                "coveredLines": 32,
+                "missedLines": 0,
+                "coveredBranches": 20,
+                "missedBranches": 42,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Person.cpp",
+                "path": "tests/testClient/Headers/test_Person.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 19.09,
+                "coveredLines": 94,
+                "missedLines": 0,
+                "coveredBranches": 42,
+                "missedBranches": 178,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Person.h",
+                "path": "tests/testClient/Headers/test_Person.h",
+                "language": "C++",
+                "lineCoverage": 88.89,
+                "branchCoverage": 100.0,
+                "coveredLines": 8,
+                "missedLines": 1,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Admin.cpp",
+                "path": "tests/testServer/Headers/test_Admin.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 37.26,
+                "coveredLines": 111,
+                "missedLines": 0,
+                "coveredBranches": 117,
+                "missedBranches": 197,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Admin.h",
+                "path": "tests/testServer/Headers/test_Admin.h",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 100.0,
+                "coveredLines": 8,
+                "missedLines": 0,
+                "coveredBranches": 0,
+                "missedBranches": 0,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Cash.cpp",
+                "path": "tests/testServer/Headers/test_Cash.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 20.0,
+                "coveredLines": 17,
+                "missedLines": 0,
+                "coveredBranches": 4,
+                "missedBranches": 16,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Complaint_Base.cpp",
+                "path": "tests/testServer/Headers/test_Complaint_Base.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 25.74,
+                "coveredLines": 48,
+                "missedLines": 0,
+                "coveredBranches": 35,
+                "missedBranches": 101,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Complaint_C.cpp",
+                "path": "tests/testServer/Headers/test_Complaint_C.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 31.58,
+                "coveredLines": 15,
+                "missedLines": 0,
+                "coveredBranches": 12,
+                "missedBranches": 26,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Complaint_E.cpp",
+                "path": "tests/testServer/Headers/test_Complaint_E.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 31.67,
+                "coveredLines": 19,
+                "missedLines": 0,
+                "coveredBranches": 19,
+                "missedBranches": 41,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Customer.cpp",
+                "path": "tests/testServer/Headers/test_Customer.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 38.46,
+                "coveredLines": 47,
+                "missedLines": 0,
+                "coveredBranches": 40,
+                "missedBranches": 64,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Employee.cpp",
+                "path": "tests/testServer/Headers/test_Employee.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 41.46,
+                "coveredLines": 37,
+                "missedLines": 0,
+                "coveredBranches": 34,
+                "missedBranches": 48,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Person.cpp",
+                "path": "tests/testServer/Headers/test_Person.cpp",
+                "language": "C++",
+                "lineCoverage": 100.0,
+                "branchCoverage": 32.09,
+                "coveredLines": 39,
+                "missedLines": 0,
+                "coveredBranches": 43,
+                "missedBranches": 91,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Person.h",
+                "path": "tests/testServer/Headers/test_Person.h",
+                "language": "C++",
+                "lineCoverage": 95.45,
+                "branchCoverage": 50.0,
+                "coveredLines": 21,
+                "missedLines": 1,
+                "coveredBranches": 2,
+                "missedBranches": 2,
+                "status": "HEALTHY",
+                "riskLevel": "LOW",
+                "heatmapColor": "GREEN"
+            },
+            {
+                "name": "test_Server.cpp",
+                "path": "tests/testServer/Headers/test_Server.cpp",
+                "language": "C++",
+                "lineCoverage": 77.78,
+                "branchCoverage": 21.43,
+                "coveredLines": 7,
+                "missedLines": 2,
+                "coveredBranches": 3,
+                "missedBranches": 11,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            },
+            {
+                "name": "test_Thread.cpp",
+                "path": "tests/testServer/Headers/test_Thread.cpp",
+                "language": "C++",
+                "lineCoverage": 77.78,
+                "branchCoverage": 16.67,
+                "coveredLines": 7,
+                "missedLines": 2,
+                "coveredBranches": 2,
+                "missedBranches": 10,
+                "status": "WARNING",
+                "riskLevel": "MEDIUM",
+                "heatmapColor": "YELLOW"
+            }
+        ]
+    },
+    "modules": [
+        {
+            "name": "Basket.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/entity/Basket.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 4,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Type.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/entity/Type.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "BasketItem.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/entity/BasketItem.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Product.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/entity/Product.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Brand.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/entity/Brand.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "MyConfig.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/config/MyConfig.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 8,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "CorsConfig.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/config/CorsConfig.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 6,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "SecurityConfig.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/config/SecurityConfig.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 14,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "BrandServiceImpl.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/service/BrandServiceImpl.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 15,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "BasketService.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/service/BasketService.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "ProductServiceImpl.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/service/ProductServiceImpl.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 60,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "TypeService.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/service/TypeService.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "BrandService.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/service/BrandService.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "TypeServiceImpl.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/service/TypeServiceImpl.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 15,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "ProductService.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/service/ProductService.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "BasketServiceImpl.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/service/BasketServiceImpl.java",
+            "language": "Java",
+            "lineCoverage": 97.83,
+            "branchCoverage": 75.0,
+            "coveredLines": 45,
+            "missedLines": 1,
+            "coveredBranches": 3,
+            "missedBranches": 1,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "SportscenterApplication.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/SportscenterApplication.java",
+            "language": "Java",
+            "lineCoverage": 33.33,
+            "branchCoverage": 0.0,
+            "coveredLines": 1,
+            "missedLines": 2,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "BasketController.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/controller/BasketController.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 27,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "AuthConroller.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/controller/AuthConroller.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 83.33,
+            "coveredLines": 28,
+            "missedLines": 0,
+            "coveredBranches": 5,
+            "missedBranches": 1,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "ProductController.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/controller/ProductController.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 90.91,
+            "coveredLines": 37,
+            "missedLines": 0,
+            "coveredBranches": 20,
+            "missedBranches": 2,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "CustomExceptionHandler.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/exceptions/CustomExceptionHandler.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 3,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "ProductNotFoundException.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/exceptions/ProductNotFoundException.java",
+            "language": "Java",
+            "lineCoverage": 50.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 2,
+            "missedLines": 2,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "JwtAuthenticationFilter.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/security/JwtAuthenticationFilter.java",
+            "language": "Java",
+            "lineCoverage": 96.43,
+            "branchCoverage": 70.0,
+            "coveredLines": 27,
+            "missedLines": 1,
+            "coveredBranches": 7,
+            "missedBranches": 3,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "JwtAuthenticationEntryPoint.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/security/JwtAuthenticationEntryPoint.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 5,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "JwtHelper.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/security/JwtHelper.java",
+            "language": "Java",
+            "lineCoverage": 100.0,
+            "branchCoverage": 75.0,
+            "coveredLines": 27,
+            "missedLines": 0,
+            "coveredBranches": 3,
+            "missedBranches": 1,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "TypeResponse.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/model/TypeResponse.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "BasketItemResponse.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/model/BasketItemResponse.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "JwtResponse.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/model/JwtResponse.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "ProductResponse.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/model/ProductResponse.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "BrandResponse.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/model/BrandResponse.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "CustomErrorResponse.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/model/CustomErrorResponse.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "BasketResponse.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/model/BasketResponse.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "JwtRequest.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/model/JwtRequest.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "BrandRepository.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/repository/BrandRepository.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "BasketRepository.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/repository/BasketRepository.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "TypeRepository.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/repository/TypeRepository.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "ProductRepository.java",
+            "path": "src/main/java/com/ecoomerce/sportscenter/repository/ProductRepository.java",
+            "language": "Java",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "clientProgram.cpp",
+            "path": "Client/clientProgram.cpp",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 42,
+            "coveredBranches": 0,
+            "missedBranches": 59,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Admin.cpp",
+            "path": "Client/Headers/Admin.cpp",
+            "language": "C++",
+            "lineCoverage": 31.58,
+            "branchCoverage": 18.04,
+            "coveredLines": 90,
+            "missedLines": 195,
+            "coveredBranches": 103,
+            "missedBranches": 468,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Admin.h",
+            "path": "Client/Headers/Admin.h",
+            "language": "C++",
+            "lineCoverage": 50.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 1,
+            "missedLines": 1,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "Cash.h",
+            "path": "Client/Headers/Cash.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 8,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Client.cpp",
+            "path": "Client/Headers/Client.cpp",
+            "language": "C++",
+            "lineCoverage": 58.33,
+            "branchCoverage": 16.67,
+            "coveredLines": 21,
+            "missedLines": 15,
+            "coveredBranches": 5,
+            "missedBranches": 25,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "Client.h",
+            "path": "Client/Headers/Client.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 2,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 4,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Customer.cpp",
+            "path": "Client/Headers/Customer.cpp",
+            "language": "C++",
+            "lineCoverage": 24.43,
+            "branchCoverage": 15.04,
+            "coveredLines": 32,
+            "missedLines": 99,
+            "coveredBranches": 34,
+            "missedBranches": 192,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Customer.h",
+            "path": "Client/Headers/Customer.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 2,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Employee.cpp",
+            "path": "Client/Headers/Employee.cpp",
+            "language": "C++",
+            "lineCoverage": 27.91,
+            "branchCoverage": 12.65,
+            "coveredLines": 36,
+            "missedLines": 93,
+            "coveredBranches": 32,
+            "missedBranches": 221,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Employee.h",
+            "path": "Client/Headers/Employee.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 2,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Person.cpp",
+            "path": "Client/Headers/Person.cpp",
+            "language": "C++",
+            "lineCoverage": 21.45,
+            "branchCoverage": 18.51,
+            "coveredLines": 65,
+            "missedLines": 238,
+            "coveredBranches": 72,
+            "missedBranches": 317,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Person.h",
+            "path": "Client/Headers/Person.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 7,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "serverProgram.cpp",
+            "path": "Server/serverProgram.cpp",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 35,
+            "coveredBranches": 0,
+            "missedBranches": 31,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Admin.cpp",
+            "path": "Server/Headers/Admin.cpp",
+            "language": "C++",
+            "lineCoverage": 53.28,
+            "branchCoverage": 37.02,
+            "coveredLines": 146,
+            "missedLines": 128,
+            "coveredBranches": 194,
+            "missedBranches": 330,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "Admin.h",
+            "path": "Server/Headers/Admin.h",
+            "language": "C++",
+            "lineCoverage": 50.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 1,
+            "missedLines": 1,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "Cash.h",
+            "path": "Server/Headers/Cash.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 10,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Complaint_Base.cpp",
+            "path": "Server/Headers/Complaint_Base.cpp",
+            "language": "C++",
+            "lineCoverage": 98.84,
+            "branchCoverage": 52.73,
+            "coveredLines": 85,
+            "missedLines": 1,
+            "coveredBranches": 58,
+            "missedBranches": 52,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Complaint_Base.h",
+            "path": "Server/Headers/Complaint_Base.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 2,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Complaint_C.h",
+            "path": "Server/Headers/Complaint_C.h",
+            "language": "C++",
+            "lineCoverage": 75.0,
+            "branchCoverage": 50.0,
+            "coveredLines": 9,
+            "missedLines": 3,
+            "coveredBranches": 1,
+            "missedBranches": 1,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "Complaint_E.cpp",
+            "path": "Server/Headers/Complaint_E.cpp",
+            "language": "C++",
+            "lineCoverage": 97.3,
+            "branchCoverage": 42.42,
+            "coveredLines": 36,
+            "missedLines": 1,
+            "coveredBranches": 28,
+            "missedBranches": 38,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Complaint_E.h",
+            "path": "Server/Headers/Complaint_E.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 1,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Customer.cpp",
+            "path": "Server/Headers/Customer.cpp",
+            "language": "C++",
+            "lineCoverage": 56.58,
+            "branchCoverage": 27.78,
+            "coveredLines": 43,
+            "missedLines": 33,
+            "coveredBranches": 25,
+            "missedBranches": 65,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "Customer.h",
+            "path": "Server/Headers/Customer.h",
+            "language": "C++",
+            "lineCoverage": 50.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 1,
+            "missedLines": 1,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "Employee.cpp",
+            "path": "Server/Headers/Employee.cpp",
+            "language": "C++",
+            "lineCoverage": 35.56,
+            "branchCoverage": 14.96,
+            "coveredLines": 32,
+            "missedLines": 58,
+            "coveredBranches": 19,
+            "missedBranches": 108,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Employee.h",
+            "path": "Server/Headers/Employee.h",
+            "language": "C++",
+            "lineCoverage": 50.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 1,
+            "missedLines": 1,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "Person.cpp",
+            "path": "Server/Headers/Person.cpp",
+            "language": "C++",
+            "lineCoverage": 33.33,
+            "branchCoverage": 18.99,
+            "coveredLines": 93,
+            "missedLines": 186,
+            "coveredBranches": 120,
+            "missedBranches": 512,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Person.h",
+            "path": "Server/Headers/Person.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 1,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Server.cpp",
+            "path": "Server/Headers/Server.cpp",
+            "language": "C++",
+            "lineCoverage": 30.1,
+            "branchCoverage": 8.67,
+            "coveredLines": 31,
+            "missedLines": 72,
+            "coveredBranches": 13,
+            "missedBranches": 137,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Server.h",
+            "path": "Server/Headers/Server.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 75.0,
+            "coveredLines": 1,
+            "missedLines": 0,
+            "coveredBranches": 3,
+            "missedBranches": 1,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "Thread.cpp",
+            "path": "Server/Headers/Thread.cpp",
+            "language": "C++",
+            "lineCoverage": 21.88,
+            "branchCoverage": 7.69,
+            "coveredLines": 14,
+            "missedLines": 50,
+            "coveredBranches": 2,
+            "missedBranches": 24,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "Thread.h",
+            "path": "Server/Headers/Thread.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 7,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "gmock-cardinalities.h",
+            "path": "build/_deps/googletest-src/googlemock/include/gmock/gmock-cardinalities.h",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 14,
+            "coveredBranches": 0,
+            "missedBranches": 4,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gmock-matchers.h",
+            "path": "build/_deps/googletest-src/googlemock/include/gmock/gmock-matchers.h",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 9,
+            "coveredBranches": 0,
+            "missedBranches": 12,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gmock-spec-builders.h",
+            "path": "build/_deps/googletest-src/googlemock/include/gmock/gmock-spec-builders.h",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 46,
+            "coveredBranches": 0,
+            "missedBranches": 14,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gmock-internal-utils.h",
+            "path": "build/_deps/googletest-src/googlemock/include/gmock/internal/gmock-internal-utils.h",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 10,
+            "coveredBranches": 0,
+            "missedBranches": 4,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gmock-cardinalities.cc",
+            "path": "build/_deps/googletest-src/googlemock/src/gmock-cardinalities.cc",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 53,
+            "coveredBranches": 0,
+            "missedBranches": 104,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gmock-internal-utils.cc",
+            "path": "build/_deps/googletest-src/googlemock/src/gmock-internal-utils.cc",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 82,
+            "coveredBranches": 0,
+            "missedBranches": 134,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gmock-matchers.cc",
+            "path": "build/_deps/googletest-src/googlemock/src/gmock-matchers.cc",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 198,
+            "coveredBranches": 0,
+            "missedBranches": 300,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gmock-spec-builders.cc",
+            "path": "build/_deps/googletest-src/googlemock/src/gmock-spec-builders.cc",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 346,
+            "coveredBranches": 0,
+            "missedBranches": 363,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gmock.cc",
+            "path": "build/_deps/googletest-src/googlemock/src/gmock.cc",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 69,
+            "coveredBranches": 0,
+            "missedBranches": 102,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gmock_main.cc",
+            "path": "build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 0,
+            "missedLines": 4,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-assertion-result.h",
+            "path": "build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h",
+            "language": "C++",
+            "lineCoverage": 3.41,
+            "branchCoverage": 0.0,
+            "coveredLines": 3,
+            "missedLines": 85,
+            "coveredBranches": 0,
+            "missedBranches": 166,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-matchers.h",
+            "path": "build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 288,
+            "coveredBranches": 0,
+            "missedBranches": 164,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-message.h",
+            "path": "build/_deps/googletest-src/googletest/include/gtest/gtest-message.h",
+            "language": "C++",
+            "lineCoverage": 16.16,
+            "branchCoverage": 20.37,
+            "coveredLines": 32,
+            "missedLines": 166,
+            "coveredBranches": 11,
+            "missedBranches": 43,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-printers.h",
+            "path": "build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 161,
+            "coveredBranches": 0,
+            "missedBranches": 42,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-test-part.h",
+            "path": "build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h",
+            "language": "C++",
+            "lineCoverage": 64.71,
+            "branchCoverage": 42.86,
+            "coveredLines": 11,
+            "missedLines": 6,
+            "coveredBranches": 6,
+            "missedBranches": 8,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "gtest.h",
+            "path": "build/_deps/googletest-src/googletest/include/gtest/gtest.h",
+            "language": "C++",
+            "lineCoverage": 48.15,
+            "branchCoverage": 14.86,
+            "coveredLines": 104,
+            "missedLines": 112,
+            "coveredBranches": 33,
+            "missedBranches": 189,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "gtest-death-test-internal.h",
+            "path": "build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 11,
+            "coveredBranches": 0,
+            "missedBranches": 2,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-filepath.h",
+            "path": "build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h",
+            "language": "C++",
+            "lineCoverage": 50.0,
+            "branchCoverage": 50.0,
+            "coveredLines": 6,
+            "missedLines": 6,
+            "coveredBranches": 2,
+            "missedBranches": 2,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "gtest-internal.h",
+            "path": "build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h",
+            "language": "C++",
+            "lineCoverage": 73.89,
+            "branchCoverage": 23.38,
+            "coveredLines": 167,
+            "missedLines": 59,
+            "coveredBranches": 173,
+            "missedBranches": 567,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "gtest-param-util.h",
+            "path": "build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h",
+            "language": "C++",
+            "lineCoverage": 36.36,
+            "branchCoverage": 12.5,
+            "coveredLines": 4,
+            "missedLines": 7,
+            "coveredBranches": 1,
+            "missedBranches": 7,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-port.h",
+            "path": "build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h",
+            "language": "C++",
+            "lineCoverage": 35.48,
+            "branchCoverage": 14.81,
+            "coveredLines": 44,
+            "missedLines": 80,
+            "coveredBranches": 8,
+            "missedBranches": 46,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-assertion-result.cc",
+            "path": "build/_deps/googletest-src/googletest/src/gtest-assertion-result.cc",
+            "language": "C++",
+            "lineCoverage": 5.56,
+            "branchCoverage": 0.0,
+            "coveredLines": 1,
+            "missedLines": 17,
+            "coveredBranches": 0,
+            "missedBranches": 24,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-death-test.cc",
+            "path": "build/_deps/googletest-src/googletest/src/gtest-death-test.cc",
+            "language": "C++",
+            "lineCoverage": 0.69,
+            "branchCoverage": 0.14,
+            "coveredLines": 2,
+            "missedLines": 288,
+            "coveredBranches": 1,
+            "missedBranches": 703,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-filepath.cc",
+            "path": "build/_deps/googletest-src/googletest/src/gtest-filepath.cc",
+            "language": "C++",
+            "lineCoverage": 15.65,
+            "branchCoverage": 8.18,
+            "coveredLines": 18,
+            "missedLines": 97,
+            "coveredBranches": 18,
+            "missedBranches": 202,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-internal-inl.h",
+            "path": "build/_deps/googletest-src/googletest/src/gtest-internal-inl.h",
+            "language": "C++",
+            "lineCoverage": 54.88,
+            "branchCoverage": 15.05,
+            "coveredLines": 118,
+            "missedLines": 97,
+            "coveredBranches": 31,
+            "missedBranches": 175,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "gtest-matchers.cc",
+            "path": "build/_deps/googletest-src/googletest/src/gtest-matchers.cc",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 22,
+            "coveredBranches": 0,
+            "missedBranches": 80,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-port.cc",
+            "path": "build/_deps/googletest-src/googletest/src/gtest-port.cc",
+            "language": "C++",
+            "lineCoverage": 22.08,
+            "branchCoverage": 7.72,
+            "coveredLines": 102,
+            "missedLines": 360,
+            "coveredBranches": 55,
+            "missedBranches": 657,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-printers.cc",
+            "path": "build/_deps/googletest-src/googletest/src/gtest-printers.cc",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 460,
+            "coveredBranches": 0,
+            "missedBranches": 263,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-test-part.cc",
+            "path": "build/_deps/googletest-src/googletest/src/gtest-test-part.cc",
+            "language": "C++",
+            "lineCoverage": 8.57,
+            "branchCoverage": 8.0,
+            "coveredLines": 3,
+            "missedLines": 32,
+            "coveredBranches": 4,
+            "missedBranches": 46,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest-typed-test.cc",
+            "path": "build/_deps/googletest-src/googletest/src/gtest-typed-test.cc",
+            "language": "C++",
+            "lineCoverage": 0.0,
+            "branchCoverage": 0.0,
+            "coveredLines": 0,
+            "missedLines": 37,
+            "coveredBranches": 0,
+            "missedBranches": 70,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest.cc",
+            "path": "build/_deps/googletest-src/googletest/src/gtest.cc",
+            "language": "C++",
+            "lineCoverage": 27.37,
+            "branchCoverage": 9.47,
+            "coveredLines": 767,
+            "missedLines": 2035,
+            "coveredBranches": 473,
+            "missedBranches": 4521,
+            "status": "CRITICAL",
+            "riskLevel": "HIGH",
+            "heatmapColor": "RED"
+        },
+        {
+            "name": "gtest_main.cc",
+            "path": "build/_deps/googletest-src/googletest/src/gtest_main.cc",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 4,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "MockClient.h",
+            "path": "tests/common/MockClient.h",
+            "language": "C++",
+            "lineCoverage": 87.5,
+            "branchCoverage": 50.0,
+            "coveredLines": 21,
+            "missedLines": 3,
+            "coveredBranches": 12,
+            "missedBranches": 12,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "MockThread.h",
+            "path": "tests/common/MockThread.h",
+            "language": "C++",
+            "lineCoverage": 45.45,
+            "branchCoverage": 5.56,
+            "coveredLines": 10,
+            "missedLines": 12,
+            "coveredBranches": 1,
+            "missedBranches": 17,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "stdin_redirect.h",
+            "path": "tests/common/stdin_redirect.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 50.0,
+            "coveredLines": 4,
+            "missedLines": 0,
+            "coveredBranches": 1,
+            "missedBranches": 1,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_helpers.h",
+            "path": "tests/common/test_helpers.h",
+            "language": "C++",
+            "lineCoverage": 92.31,
+            "branchCoverage": 50.0,
+            "coveredLines": 12,
+            "missedLines": 1,
+            "coveredBranches": 9,
+            "missedBranches": 9,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_runtime.cpp",
+            "path": "tests/common/test_runtime.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 0,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_workspace.h",
+            "path": "tests/common/test_workspace.h",
+            "language": "C++",
+            "lineCoverage": 96.55,
+            "branchCoverage": 51.79,
+            "coveredLines": 28,
+            "missedLines": 1,
+            "coveredBranches": 29,
+            "missedBranches": 27,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Admin.cpp",
+            "path": "tests/testClient/Headers/test_Admin.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 38.89,
+            "coveredLines": 78,
+            "missedLines": 0,
+            "coveredBranches": 70,
+            "missedBranches": 110,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Admin.h",
+            "path": "tests/testClient/Headers/test_Admin.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 8,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Cash.cpp",
+            "path": "tests/testClient/Headers/test_Cash.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 20.0,
+            "coveredLines": 16,
+            "missedLines": 0,
+            "coveredBranches": 4,
+            "missedBranches": 16,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Client.cpp",
+            "path": "tests/testClient/Headers/test_Client.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 32.61,
+            "coveredLines": 16,
+            "missedLines": 0,
+            "coveredBranches": 15,
+            "missedBranches": 31,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Customer.cpp",
+            "path": "tests/testClient/Headers/test_Customer.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 32.5,
+            "coveredLines": 33,
+            "missedLines": 0,
+            "coveredBranches": 26,
+            "missedBranches": 54,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Employee.cpp",
+            "path": "tests/testClient/Headers/test_Employee.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 32.26,
+            "coveredLines": 32,
+            "missedLines": 0,
+            "coveredBranches": 20,
+            "missedBranches": 42,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Person.cpp",
+            "path": "tests/testClient/Headers/test_Person.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 19.09,
+            "coveredLines": 94,
+            "missedLines": 0,
+            "coveredBranches": 42,
+            "missedBranches": 178,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Person.h",
+            "path": "tests/testClient/Headers/test_Person.h",
+            "language": "C++",
+            "lineCoverage": 88.89,
+            "branchCoverage": 100.0,
+            "coveredLines": 8,
+            "missedLines": 1,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Admin.cpp",
+            "path": "tests/testServer/Headers/test_Admin.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 37.26,
+            "coveredLines": 111,
+            "missedLines": 0,
+            "coveredBranches": 117,
+            "missedBranches": 197,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Admin.h",
+            "path": "tests/testServer/Headers/test_Admin.h",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 100.0,
+            "coveredLines": 8,
+            "missedLines": 0,
+            "coveredBranches": 0,
+            "missedBranches": 0,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Cash.cpp",
+            "path": "tests/testServer/Headers/test_Cash.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 20.0,
+            "coveredLines": 17,
+            "missedLines": 0,
+            "coveredBranches": 4,
+            "missedBranches": 16,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Complaint_Base.cpp",
+            "path": "tests/testServer/Headers/test_Complaint_Base.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 25.74,
+            "coveredLines": 48,
+            "missedLines": 0,
+            "coveredBranches": 35,
+            "missedBranches": 101,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Complaint_C.cpp",
+            "path": "tests/testServer/Headers/test_Complaint_C.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 31.58,
+            "coveredLines": 15,
+            "missedLines": 0,
+            "coveredBranches": 12,
+            "missedBranches": 26,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Complaint_E.cpp",
+            "path": "tests/testServer/Headers/test_Complaint_E.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 31.67,
+            "coveredLines": 19,
+            "missedLines": 0,
+            "coveredBranches": 19,
+            "missedBranches": 41,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Customer.cpp",
+            "path": "tests/testServer/Headers/test_Customer.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 38.46,
+            "coveredLines": 47,
+            "missedLines": 0,
+            "coveredBranches": 40,
+            "missedBranches": 64,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Employee.cpp",
+            "path": "tests/testServer/Headers/test_Employee.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 41.46,
+            "coveredLines": 37,
+            "missedLines": 0,
+            "coveredBranches": 34,
+            "missedBranches": 48,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Person.cpp",
+            "path": "tests/testServer/Headers/test_Person.cpp",
+            "language": "C++",
+            "lineCoverage": 100.0,
+            "branchCoverage": 32.09,
+            "coveredLines": 39,
+            "missedLines": 0,
+            "coveredBranches": 43,
+            "missedBranches": 91,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Person.h",
+            "path": "tests/testServer/Headers/test_Person.h",
+            "language": "C++",
+            "lineCoverage": 95.45,
+            "branchCoverage": 50.0,
+            "coveredLines": 21,
+            "missedLines": 1,
+            "coveredBranches": 2,
+            "missedBranches": 2,
+            "status": "HEALTHY",
+            "riskLevel": "LOW",
+            "heatmapColor": "GREEN"
+        },
+        {
+            "name": "test_Server.cpp",
+            "path": "tests/testServer/Headers/test_Server.cpp",
+            "language": "C++",
+            "lineCoverage": 77.78,
+            "branchCoverage": 21.43,
+            "coveredLines": 7,
+            "missedLines": 2,
+            "coveredBranches": 3,
+            "missedBranches": 11,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        },
+        {
+            "name": "test_Thread.cpp",
+            "path": "tests/testServer/Headers/test_Thread.cpp",
+            "language": "C++",
+            "lineCoverage": 77.78,
+            "branchCoverage": 16.67,
+            "coveredLines": 7,
+            "missedLines": 2,
+            "coveredBranches": 2,
+            "missedBranches": 10,
+            "status": "WARNING",
+            "riskLevel": "MEDIUM",
+            "heatmapColor": "YELLOW"
+        }
+    ],
+    "riskRanking": [
+        {
+            "name": "Type.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "BasketItem.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "Product.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "Brand.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "BasketService.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "TypeService.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "BrandService.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "ProductService.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "TypeResponse.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "BasketItemResponse.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "JwtResponse.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "ProductResponse.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "BrandResponse.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "CustomErrorResponse.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "BasketResponse.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "JwtRequest.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "BrandRepository.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "BasketRepository.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "TypeRepository.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "ProductRepository.java",
+            "language": "Java",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "clientProgram.cpp",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "serverProgram.cpp",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gmock-cardinalities.h",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gmock-matchers.h",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gmock-spec-builders.h",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gmock-internal-utils.h",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gmock-cardinalities.cc",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gmock-internal-utils.cc",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gmock-matchers.cc",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gmock-spec-builders.cc",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gmock.cc",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gmock_main.cc",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-matchers.h",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-printers.h",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-death-test-internal.h",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-matchers.cc",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-printers.cc",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-typed-test.cc",
+            "language": "C++",
+            "coverage": 0.0,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-death-test.cc",
+            "language": "C++",
+            "coverage": 0.69,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-assertion-result.h",
+            "language": "C++",
+            "coverage": 3.41,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-assertion-result.cc",
+            "language": "C++",
+            "coverage": 5.56,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-test-part.cc",
+            "language": "C++",
+            "coverage": 8.57,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-filepath.cc",
+            "language": "C++",
+            "coverage": 15.65,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-message.h",
+            "language": "C++",
+            "coverage": 16.16,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "Person.cpp",
+            "language": "C++",
+            "coverage": 21.45,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "Thread.cpp",
+            "language": "C++",
+            "coverage": 21.88,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-port.cc",
+            "language": "C++",
+            "coverage": 22.08,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "Customer.cpp",
+            "language": "C++",
+            "coverage": 24.43,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest.cc",
+            "language": "C++",
+            "coverage": 27.37,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "Employee.cpp",
+            "language": "C++",
+            "coverage": 27.91,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "Server.cpp",
+            "language": "C++",
+            "coverage": 30.1,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "Admin.cpp",
+            "language": "C++",
+            "coverage": 31.58,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "SportscenterApplication.java",
+            "language": "Java",
+            "coverage": 33.33,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "Person.cpp",
+            "language": "C++",
+            "coverage": 33.33,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-port.h",
+            "language": "C++",
+            "coverage": 35.48,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "Employee.cpp",
+            "language": "C++",
+            "coverage": 35.56,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "gtest-param-util.h",
+            "language": "C++",
+            "coverage": 36.36,
+            "riskLevel": "HIGH"
+        },
+        {
+            "name": "MockThread.h",
+            "language": "C++",
+            "coverage": 45.45,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "gtest.h",
+            "language": "C++",
+            "coverage": 48.15,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "ProductNotFoundException.java",
+            "language": "Java",
+            "coverage": 50.0,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "Admin.h",
+            "language": "C++",
+            "coverage": 50.0,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "Admin.h",
+            "language": "C++",
+            "coverage": 50.0,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "Customer.h",
+            "language": "C++",
+            "coverage": 50.0,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "Employee.h",
+            "language": "C++",
+            "coverage": 50.0,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "gtest-filepath.h",
+            "language": "C++",
+            "coverage": 50.0,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "Admin.cpp",
+            "language": "C++",
+            "coverage": 53.28,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "gtest-internal-inl.h",
+            "language": "C++",
+            "coverage": 54.88,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "Customer.cpp",
+            "language": "C++",
+            "coverage": 56.58,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "Client.cpp",
+            "language": "C++",
+            "coverage": 58.33,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "gtest-test-part.h",
+            "language": "C++",
+            "coverage": 64.71,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "gtest-internal.h",
+            "language": "C++",
+            "coverage": 73.89,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "Complaint_C.h",
+            "language": "C++",
+            "coverage": 75.0,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "test_Server.cpp",
+            "language": "C++",
+            "coverage": 77.78,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "test_Thread.cpp",
+            "language": "C++",
+            "coverage": 77.78,
+            "riskLevel": "MEDIUM"
+        },
+        {
+            "name": "MockClient.h",
+            "language": "C++",
+            "coverage": 87.5,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Person.h",
+            "language": "C++",
+            "coverage": 88.89,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_helpers.h",
+            "language": "C++",
+            "coverage": 92.31,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Person.h",
+            "language": "C++",
+            "coverage": 95.45,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "JwtAuthenticationFilter.java",
+            "language": "Java",
+            "coverage": 96.43,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_workspace.h",
+            "language": "C++",
+            "coverage": 96.55,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Complaint_E.cpp",
+            "language": "C++",
+            "coverage": 97.3,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "BasketServiceImpl.java",
+            "language": "Java",
+            "coverage": 97.83,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Complaint_Base.cpp",
+            "language": "C++",
+            "coverage": 98.84,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Basket.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "MyConfig.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "CorsConfig.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "SecurityConfig.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "BrandServiceImpl.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "ProductServiceImpl.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "TypeServiceImpl.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "BasketController.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "AuthConroller.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "ProductController.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "CustomExceptionHandler.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "JwtAuthenticationEntryPoint.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "JwtHelper.java",
+            "language": "Java",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Cash.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Client.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Customer.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Employee.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Person.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Cash.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Complaint_Base.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Complaint_E.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Person.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Server.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "Thread.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "gtest_main.cc",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "stdin_redirect.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_runtime.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Admin.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Admin.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Cash.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Client.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Customer.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Employee.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Person.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Admin.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Admin.h",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Cash.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Complaint_Base.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Complaint_C.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Complaint_E.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Customer.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Employee.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        },
+        {
+            "name": "test_Person.cpp",
+            "language": "C++",
+            "coverage": 100.0,
+            "riskLevel": "LOW"
+        }
+    ],
+    "heatmap": [
+        {
+            "name": "Basket.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "Type.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "BasketItem.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "Product.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "Brand.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "MyConfig.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "CorsConfig.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "SecurityConfig.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "BrandServiceImpl.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "BasketService.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "ProductServiceImpl.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "TypeService.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "BrandService.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "TypeServiceImpl.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "ProductService.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "BasketServiceImpl.java",
+            "coverage": 97.83,
+            "color": "GREEN"
+        },
+        {
+            "name": "SportscenterApplication.java",
+            "coverage": 33.33,
+            "color": "RED"
+        },
+        {
+            "name": "BasketController.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "AuthConroller.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "ProductController.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "CustomExceptionHandler.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "ProductNotFoundException.java",
+            "coverage": 50.0,
+            "color": "YELLOW"
+        },
+        {
+            "name": "JwtAuthenticationFilter.java",
+            "coverage": 96.43,
+            "color": "GREEN"
+        },
+        {
+            "name": "JwtAuthenticationEntryPoint.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "JwtHelper.java",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "TypeResponse.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "BasketItemResponse.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "JwtResponse.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "ProductResponse.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "BrandResponse.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "CustomErrorResponse.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "BasketResponse.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "JwtRequest.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "BrandRepository.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "BasketRepository.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "TypeRepository.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "ProductRepository.java",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "clientProgram.cpp",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "Admin.cpp",
+            "coverage": 31.58,
+            "color": "RED"
+        },
+        {
+            "name": "Admin.h",
+            "coverage": 50.0,
+            "color": "YELLOW"
+        },
+        {
+            "name": "Cash.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "Client.cpp",
+            "coverage": 58.33,
+            "color": "YELLOW"
+        },
+        {
+            "name": "Client.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "Customer.cpp",
+            "coverage": 24.43,
+            "color": "RED"
+        },
+        {
+            "name": "Customer.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "Employee.cpp",
+            "coverage": 27.91,
+            "color": "RED"
+        },
+        {
+            "name": "Employee.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "Person.cpp",
+            "coverage": 21.45,
+            "color": "RED"
+        },
+        {
+            "name": "Person.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "serverProgram.cpp",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "Admin.cpp",
+            "coverage": 53.28,
+            "color": "YELLOW"
+        },
+        {
+            "name": "Admin.h",
+            "coverage": 50.0,
+            "color": "YELLOW"
+        },
+        {
+            "name": "Cash.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "Complaint_Base.cpp",
+            "coverage": 98.84,
+            "color": "GREEN"
+        },
+        {
+            "name": "Complaint_Base.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "Complaint_C.h",
+            "coverage": 75.0,
+            "color": "YELLOW"
+        },
+        {
+            "name": "Complaint_E.cpp",
+            "coverage": 97.3,
+            "color": "GREEN"
+        },
+        {
+            "name": "Complaint_E.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "Customer.cpp",
+            "coverage": 56.58,
+            "color": "YELLOW"
+        },
+        {
+            "name": "Customer.h",
+            "coverage": 50.0,
+            "color": "YELLOW"
+        },
+        {
+            "name": "Employee.cpp",
+            "coverage": 35.56,
+            "color": "RED"
+        },
+        {
+            "name": "Employee.h",
+            "coverage": 50.0,
+            "color": "YELLOW"
+        },
+        {
+            "name": "Person.cpp",
+            "coverage": 33.33,
+            "color": "RED"
+        },
+        {
+            "name": "Person.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "Server.cpp",
+            "coverage": 30.1,
+            "color": "RED"
+        },
+        {
+            "name": "Server.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "Thread.cpp",
+            "coverage": 21.88,
+            "color": "RED"
+        },
+        {
+            "name": "Thread.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "gmock-cardinalities.h",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gmock-matchers.h",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gmock-spec-builders.h",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gmock-internal-utils.h",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gmock-cardinalities.cc",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gmock-internal-utils.cc",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gmock-matchers.cc",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gmock-spec-builders.cc",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gmock.cc",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gmock_main.cc",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-assertion-result.h",
+            "coverage": 3.41,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-matchers.h",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-message.h",
+            "coverage": 16.16,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-printers.h",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-test-part.h",
+            "coverage": 64.71,
+            "color": "YELLOW"
+        },
+        {
+            "name": "gtest.h",
+            "coverage": 48.15,
+            "color": "YELLOW"
+        },
+        {
+            "name": "gtest-death-test-internal.h",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-filepath.h",
+            "coverage": 50.0,
+            "color": "YELLOW"
+        },
+        {
+            "name": "gtest-internal.h",
+            "coverage": 73.89,
+            "color": "YELLOW"
+        },
+        {
+            "name": "gtest-param-util.h",
+            "coverage": 36.36,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-port.h",
+            "coverage": 35.48,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-assertion-result.cc",
+            "coverage": 5.56,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-death-test.cc",
+            "coverage": 0.69,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-filepath.cc",
+            "coverage": 15.65,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-internal-inl.h",
+            "coverage": 54.88,
+            "color": "YELLOW"
+        },
+        {
+            "name": "gtest-matchers.cc",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-port.cc",
+            "coverage": 22.08,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-printers.cc",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-test-part.cc",
+            "coverage": 8.57,
+            "color": "RED"
+        },
+        {
+            "name": "gtest-typed-test.cc",
+            "coverage": 0.0,
+            "color": "RED"
+        },
+        {
+            "name": "gtest.cc",
+            "coverage": 27.37,
+            "color": "RED"
+        },
+        {
+            "name": "gtest_main.cc",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "MockClient.h",
+            "coverage": 87.5,
+            "color": "GREEN"
+        },
+        {
+            "name": "MockThread.h",
+            "coverage": 45.45,
+            "color": "YELLOW"
+        },
+        {
+            "name": "stdin_redirect.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_helpers.h",
+            "coverage": 92.31,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_runtime.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_workspace.h",
+            "coverage": 96.55,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Admin.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Admin.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Cash.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Client.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Customer.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Employee.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Person.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Person.h",
+            "coverage": 88.89,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Admin.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Admin.h",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Cash.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Complaint_Base.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Complaint_C.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Complaint_E.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Customer.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Employee.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Person.cpp",
+            "coverage": 100.0,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Person.h",
+            "coverage": 95.45,
+            "color": "GREEN"
+        },
+        {
+            "name": "test_Server.cpp",
+            "coverage": 77.78,
+            "color": "YELLOW"
+        },
+        {
+            "name": "test_Thread.cpp",
+            "coverage": 77.78,
+            "color": "YELLOW"
+        }
+    ]
+}
