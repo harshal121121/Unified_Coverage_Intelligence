@@ -14,6 +14,15 @@ def generate_file_hash(filepath):
         ).hexdigest()
 
 
+def generate_method_hash(method_code):
+
+    return hashlib.md5(
+
+        method_code.encode("utf-8")
+
+    ).hexdigest()
+
+
 def load_hash_cache():
 
     if not os.path.exists(HASH_CACHE):

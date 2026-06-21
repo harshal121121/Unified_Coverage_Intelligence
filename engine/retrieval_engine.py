@@ -1,5 +1,6 @@
 from services.chroma_service import (
-    retrieve_chunks
+    retrieve_chunks,
+    collection
 )
 
 
@@ -23,11 +24,6 @@ def get_relevant_context(
 
             return ""
 
-        print(
-            f"\nRetrieved Chunks: "
-            f"{len(chunks)}"
-        )
-
         context = "\n\n".join(
             chunks
         )
@@ -43,3 +39,14 @@ def get_relevant_context(
         )
 
         return ""
+
+
+def get_total_chunks():
+
+    try:
+
+        return collection.count()
+
+    except:
+
+        return 0

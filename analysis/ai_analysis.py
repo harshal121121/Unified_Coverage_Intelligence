@@ -36,8 +36,74 @@ def generate_ai_analysis(summary):
 
         return cache.get("data", {})
 
+    # ====================================
+    # BUILD RETRIEVAL QUERY
+    # ====================================
+
+    retrieval_query = f"""
+    Project Languages:
+    {summary.get('languages', [])}
+
+    Overall Coverage:
+    {summary.get('overallCoverage', 0)}
+
+    Overall Line Coverage:
+    {summary.get('overallLineCoverage', 0)}
+
+    Overall Branch Coverage:
+    {summary.get('overallBranchCoverage', 0)}
+
+    Java Coverage:
+    {summary.get('javaCoverage', 0)}
+
+    Java Branch Coverage:
+    {summary.get('javaBranchCoverage', 0)}
+
+    C++ Coverage:
+    {summary.get('cppCoverage', 0)}
+
+    C++ Branch Coverage:
+    {summary.get('cppBranchCoverage', 0)}
+
+    Bugs:
+    {summary.get('bugs', 0)}
+
+    Vulnerabilities:
+    {summary.get('vulnerabilities', 0)}
+
+    Code Smells:
+    {summary.get('codeSmells', 0)}
+
+    Security Hotspots:
+    {summary.get('securityHotspots', 0)}
+
+    Critical Issues:
+    {summary.get('criticalIssues', 0)}
+
+    Major Issues:
+    {summary.get('majorIssues', 0)}
+
+    Minor Issues:
+    {summary.get('minorIssues', 0)}
+
+    Technical Debt Minutes:
+    {summary.get('technicalDebtMinutes', 0)}
+
+    Security Rating:
+    {summary.get('securityRating', '')}
+
+    Reliability Rating:
+    {summary.get('reliabilityRating', '')}
+
+    Maintainability Rating:
+    {summary.get('maintainabilityRating', '')}
+
+    Quality Gate:
+    {summary.get('qualityGate', '')}
+    """
+
     repo_context = get_relevant_context(
-        str(summary)
+        retrieval_query
     )
 
     print(
@@ -45,51 +111,83 @@ def generate_ai_analysis(summary):
         f"{len(repo_context)}"
     )
 
+    # ====================================
+    # BUILD PROMPT
+    # ====================================
+
     prompt = build_executive_prompt(
         summary,
         repo_context
     )
 
+    # ====================================
+    # GENERATE AI RESPONSE
+    # ====================================
+
     ai_response = generate_llm_response(
         prompt
     )
-    print("\nRAW AI RESPONSE:")
+
+    print("\nRAW AI RESPONSE:\n")
+
     print(ai_response)
+
+    # Save raw response
+
+    with open(
+        "executive_raw_response.txt",
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(ai_response)
+
+    # ====================================
+    # PARSE JSON
+    # ====================================
 
     try:
 
-        parsed = json.loads(
-            ai_response
-        )
+        cleaned_response = ai_response.strip()
 
-        required_fields = [
-            "executiveSummary",
-            "coverageRiskInsight",
-            "codeQualityInsight",
-            "securityInsight",
-            "recommendations"
-        ]
-
-        for field in required_fields:
-
-            if field not in parsed:
-
-                raise ValueError(
-                    f"Missing field: {field}"
-                )
-
-        if not isinstance(
-            parsed["recommendations"],
-            list
+        if cleaned_response.startswith(
+            "```json"
         ):
-            raise ValueError(
-                "recommendations must be a list"
+
+            cleaned_response = (
+                cleaned_response
+                .replace(
+                    "```json",
+                    ""
+                )
+                .replace(
+                    "```",
+                    ""
+                )
+                .strip()
             )
+
+        elif cleaned_response.startswith(
+            "```"
+        ):
+
+            cleaned_response = (
+                cleaned_response
+                .replace(
+                    "```",
+                    ""
+                )
+                .strip()
+            )
+
+        parsed = json.loads(
+            cleaned_response
+        )
 
     except Exception as e:
 
         print(
-            f"Executive Analysis JSON Parse Error: {e}"
+            f"\nExecutive Analysis JSON Parse Error: {e}"
         )
 
         print(
@@ -99,38 +197,80 @@ def generate_ai_analysis(summary):
         print(ai_response)
 
         parsed = {}
+    # ====================================
+    # VALIDATE / FIX OUTPUT
+    # ====================================
+
+    parsed.setdefault(
+        "executiveSummary",
+        "Executive summary unavailable."
+    )
+
+    parsed.setdefault(
+        "coverageRiskInsight",
+        "Coverage insight unavailable."
+    )
+
+    parsed.setdefault(
+        "codeQualityInsight",
+        "Code quality insight unavailable."
+    )
+
+    parsed.setdefault(
+        "securityInsight",
+        "Security insight unavailable."
+    )
+
+        # ====================================
+    # FINAL RESULT
+    # ====================================
 
     result = {
 
-        "executiveSummary": parsed.get(
-            "executiveSummary",
-            ""
-        ),
+        "executiveSummary":
 
-        "coverageRiskInsight": parsed.get(
-            "coverageRiskInsight",
-            ""
-        ),
+            parsed.get(
+                "executiveSummary",
+                "Executive summary unavailable."
+            ),
 
-        "codeQualityInsight": parsed.get(
-            "codeQualityInsight",
-            ""
-        ),
+        "coverageRiskInsight":
 
-        "securityInsight": parsed.get(
-            "securityInsight",
-            ""
-        ),
+            parsed.get(
+                "coverageRiskInsight",
+                "Coverage insight unavailable."
+            ),
 
-        "recommendations": parsed.get(
-            "recommendations",
-            []
-        )
+        "codeQualityInsight":
+
+            parsed.get(
+                "codeQualityInsight",
+                "Code quality insight unavailable."
+            ),
+
+        "securityInsight":
+
+            parsed.get(
+                "securityInsight",
+                "Security insight unavailable."
+            )
+
     }
 
+    # ====================================
+    # SAVE CACHE
+    # ====================================
+
     save_executive_cache({
-        "hash": current_hash,
-        "data": result
+
+        "hash":
+
+            current_hash,
+
+        "data":
+
+            result
+
     })
 
     return result

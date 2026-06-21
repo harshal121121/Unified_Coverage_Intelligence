@@ -30,8 +30,19 @@ from services.output_writer import (
 from services.api_service import (
     send_executive_api,
     upload_complexity_json,
-    send_complexity_results
+    send_complexity_results,
+    upload_bug_analysis
 )
+
+from analysis.bug_analysis import (
+    analyze_issues
+)
+
+from services.output_writer import (
+    save_bug_output
+)
+
+
 
 
 def main():
@@ -88,6 +99,15 @@ def main():
         summary
     )
 
+    print("\n================================")
+    print("GENERATING ISSUE REMEDIATION")
+    print("================================")
+
+    bug_output = analyze_issues(
+    report,
+    repo_paths
+)
+
     # ====================================
     # COMPLEXITY ANALYSIS
     # ====================================
@@ -99,6 +119,10 @@ def main():
     complexity_output = analyze_complexity(
         repo_paths
     )
+    print(
+        f"\nTotal Methods Processed: "
+        f"{complexity_output['totalMethods']}"
+)
 
     # ====================================
     # SAVE OUTPUT FILES
@@ -114,6 +138,24 @@ def main():
 
     save_complexity_output(
         complexity_output
+    )
+
+    print(
+
+        "\nComplexity output saved successfully."
+)
+
+    final_bug_output = bug_output
+
+    print(
+
+        f"\nBug Issues Generated: "
+
+        f"{final_bug_output['totalIssues']}"
+)
+
+    save_bug_output(
+        final_bug_output
     )
 
     # ====================================
@@ -133,10 +175,11 @@ def main():
     print("================================")
 
     print(
-        complexity_output[
-            "totalFiles"
-        ]
-    )
+
+        f"Total Methods: "
+
+        f"{complexity_output['totalMethods']}"
+)
 
     # ====================================
     # SEND TO APIS
@@ -146,15 +189,65 @@ def main():
     print("SENDING DATA TO APIS")
     print("================================")
 
+    # Executive Dashboard API
     send_executive_api(
         executive_output
     )
 
+    # Bug Analysis API
+    upload_bug_analysis(
+        final_bug_output
+    )
+
+    print("\n================================")
+    print("BUG PAYLOAD SENT TO API")
+    print("================================")
+
+
+    print(
+        json.dumps(
+            final_bug_output,
+            indent=4
+        )
+    )
+
+
+    
+
+    # Complexity Upload API
     upload_complexity_json(
         complexity_output
     )
 
+    print(
+        "\n================================"
+    )
+    print(
+        "COMPLEXITY PAYLOAD SENT TO API"
+    )
+    print(
+        "================================"
+    )
+
+    import json
+
+    print(
+
+        json.dumps(
+
+            complexity_output,
+
+            indent=4,
+
+            ensure_ascii=False
+
+        )
+    )
+
+    # Complexity Results API
     send_complexity_results()
+
+    
         
 
     print("\n================================")

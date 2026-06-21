@@ -1,40 +1,115 @@
-# AI Code Quality & Complexity Analysis Engine
+# AI Engine for Intelligent Code Analysis
 
-AI-powered repository analysis platform using **Phi3 Mini**, **Ollama**, and **ChromaDB**.
+An AI-powered code analysis engine that automates software quality assessment using **LLMs**, **RAG**, and **static code analysis**.
 
 ## Features
 
 * Executive Analysis
-* Complexity Analysis
-* Optimization Suggestions
-* ChromaDB (RAG)
-* Incremental Caching
-* Spring Boot API Integration
-* React Dashboard Integration
+* AI-Based Bug Analysis
+* Method-wise Time Complexity Analysis
+* AI Optimization Suggestions
+* Suggested Code Templates
+* ChromaDB-based RAG
+* Intelligent Method & Bug Caching
+* REST API Integration
+
+---
 
 ## Tech Stack
 
 * Python
-* Ollama
-* Phi3 Mini
+* Ollama (Phi-3)
 * ChromaDB
-* Spring Boot
-* React
+* Sentence Transformers
+* Tree-sitter
+* GitPython
+* REST APIs
+
+---
+
+## Project Structure
+
+```text
+analysis/
+engine/
+prompts/
+services/
+repositories/
+cache/
+chroma_db/
+output/
+app.py
+config.py
+requirements.txt
+```
+
+---
+
+## Installation
+
+```bash
+git clone <repository-url>
+
+cd AI_ENGINE
+
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+pip install -r requirements.txt
+```
+
+---
 
 ## Run
 
 ```bash
-pip install -r requirements.txt
 python app.py
 ```
 
-## APIs
-
-* POST `/api/dashboard/ai-insights`
-* POST `/api/complexity/upload`
-* GET `/api/complexity/results`
+---
 
 ## Output
 
-* `output/executive_analysis.json`
-* `output/complexity_analysis.json`
+The engine generates:
+
+```text
+output/
+├── executive_analysis.json
+├── bug_analysis.json
+└── complexity_analysis.json
+```
+
+---
+
+## Supported Languages
+
+* Java
+* C++
+
+---
+
+## AI Workflow
+
+```text
+Coverage Report
+        │
+        ▼
+Clone Repository
+        │
+        ▼
+Build ChromaDB
+        │
+        ▼
+AI Analysis
+   ├── Executive
+   ├── Bug
+   └── Complexity
+        │
+        ▼
+JSON Reports
+        │
+        ▼
+Backend APIs
+```

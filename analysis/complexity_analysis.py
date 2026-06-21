@@ -1,282 +1,332 @@
+# analysis/complexity_analysis.py
+import os
 import json
-import time
+import re
 
-from services.hash_service import (
-    generate_file_hash
-)
-
-from services.repo_scanner import (
-    scan_all_files
-)
-
-from services.complexity_cache_service import (
-    load_complexity_cache,
-    save_complexity_cache
-)
-
-from prompts.complexity_prompt import (
-    build_complexity_prompt
-)
+from typing import List, Dict, Any
 
 from services.llm_service import (
     generate_llm_response
 )
 
-SKIP_SUFFIXES = [
-    "Application.java",
-    "Config.java",
-    "WebConfig.java",
-    "CorsConfig.java",
-    "SecurityConfig.java"
-]
+from services.method_extractor_service import (
+    MethodExtractorService
+)
+
+from services.complexity_cache_service import (
+    ComplexityCacheService
+)
+
+from services.output_writer import (
+    OutputWriterService
+)
+
+from prompts.complexity_prompt import (
+    get_complexity_prompt
+)
 
 
-def analyze_complexity(repo_paths):
+def sanitize_and_parse_json(
+    raw_response: str
+) -> Dict[str, Any]:
 
-    cache = load_complexity_cache()
+    if not raw_response:
 
-    updated_cache = cache.copy()
+        raise ValueError(
+            "Empty LLM response."
+        )
 
-    final_results = []
+    cleaned = raw_response.strip()
 
-    total_ai_calls = 0
+    cleaned = re.sub(
+        r"^```json\s*",
+        "",
+        cleaned,
+        flags=re.IGNORECASE
+    )
+
+    cleaned = re.sub(
+        r"\s*```$",
+        "",
+        cleaned
+    )
+
+    return json.loads(
+        cleaned
+    )
+
+
+def analyze_complexity(
+    repo_paths: List[str]
+) -> Dict[str, Any]:
+
+    print(
+        "\n[+] Starting AI Complexity Analysis..."
+    )
+
+    extractor = MethodExtractorService()
+
+    cache_service = ComplexityCacheService()
+
+    writer = OutputWriterService()
+
+    active_cache_keys = set()
+
+    supported_extensions = {
+
+        ".java": "Java",
+
+        ".cpp": "C++",
+
+        ".cc": "C++",
+
+        ".cxx": "C++",
+
+        ".hpp": "C++",
+
+        ".h": "C++"
+    }
 
     for repo_path in repo_paths:
 
-        files = scan_all_files(repo_path)
+        if not os.path.exists(
+            repo_path
+        ):
 
-        for file in files:
+            continue
 
-            filepath = file["path"]
+        print(
+            f"\n[+] Processing Repository: "
+            f"{repo_path}"
+        )
 
-            code = file["content"]
+        for root, _, files in os.walk(
+            repo_path
+        ):
 
-            filename = filepath.replace(
-                "\\",
-                "/"
-            ).split("/")[-1]
+            for file in files:
 
-            if (
-                "test" in filepath.lower()
-                or filename.endswith("Test.java")
-                or filename.endswith("_test.cpp")
-            ):
-                continue
-
-            if any(
-                filename.endswith(skip)
-                for skip in SKIP_SUFFIXES
-            ):
-                continue
-
-            if len(code.strip()) < 200:
-                continue
-
-            current_hash = generate_file_hash(
-                filepath
-            )
-
-            cached_result = cache.get(
-                filepath
-            )
-
-            if (
-                cached_result
-                and cached_result.get("hash")
-                == current_hash
-            ):
-
-                print(
-                    f"Using cached complexity: {filename}"
+                filepath = os.path.join(
+                    root,
+                    file
                 )
 
-                result = cached_result
+                ext = os.path.splitext(
+                    file
+                )[1].lower()
 
-            else:
+                if ext not in supported_extensions:
 
-                total_ai_calls += 1
+                    continue
 
-                print(
-                    f"Analyzing complexity: {filename}"
-                )
-
-                start_time = time.time()
-
-                prompt = build_complexity_prompt(
-                    file_name=filename,
-                    file_path=filepath,
-                    file_hash=current_hash,
-                    code=code[:3000]
-                )
-
-                ai_response = generate_llm_response(
-                    prompt
-                )
-
-                print(
-                    f"{filename} processed in "
-                    f"{round(time.time() - start_time, 2)} sec"
-                )
-
-                try:
-
-                    print(
-                        "\nRAW COMPLEXITY RESPONSE:\n"
-                    )
-
-                    print(ai_response)
-
-                    result = json.loads(
-                        ai_response
-                    )
-
-                    required_fields = [
-                        "timeComplexity",
-                        "reason",
-                        "optimizationSuggestion",
-                        "estimatedImprovedComplexity"
-                    ]
-
-                    for field in required_fields:
-
-                        value = result.get(field)
-
-                        if value is None:
-
-                            raise ValueError(
-                                f"Missing field: {field}"
-                            )
-
-                        if isinstance(
-                            value,
-                            str
-                        ):
-
-                            value = value.strip()
-
-                            if not value:
-
-                                raise ValueError(
-                                    f"Empty field: {field}"
-                                )
-
-                        if not isinstance(
-                            value,
-                            str
-                        ):
-
-                            value = json.dumps(
-                                value
-                            )
-
-                        result[field] = value
-
-                except Exception as e:
-
-                    print(
-                        f"Invalid JSON returned for {filename}"
-                    )
-
-                    print(e)
-
-                    result = {
-                        "moduleName": filename,
-                        "filePath": filepath,
-                        "timeComplexity": "Unknown",
-                        "reason": "Unable to parse AI response",
-                        "optimizationSuggestion": "Manual review required",
-                        "estimatedImprovedComplexity": "Unknown",
-                        "hash": current_hash
-                    }
-
-                result["moduleName"] = filename
-                result["filePath"] = filepath
-                result["hash"] = current_hash
-
-                updated_cache[
+                if extractor.is_test_file(
                     filepath
-                ] = result
+                ):
 
-            final_results.append({
+                    continue
 
-                "moduleName":
-                str(
-                    result.get(
-                        "moduleName",
-                        filename
-                    )
-                ),
+                language = supported_extensions[
+                    ext
+                ]
 
-                "filePath":
-                str(
-                    result.get(
-                        "filePath",
-                        filepath
-                    )
-                ),
-
-                "timeComplexity":
-                str(
-                    result.get(
-                        "timeComplexity",
-                        "Unknown"
-                    )
-                ),
-
-                "reason":
-                str(
-                    result.get(
-                        "reason",
-                        "Analysis unavailable"
-                    )
-                ),
-
-                "optimizationSuggestion":
-                str(
-                    result.get(
-                        "optimizationSuggestion",
-                        "No suggestion available"
-                    )
-                ),
-
-                "estimatedImprovedComplexity":
-                str(
-                    result.get(
-                        "estimatedImprovedComplexity",
-                        "Unknown"
-                    )
-                ),
-
-                "hash":
-                str(
-                    result.get(
-                        "hash",
-                        current_hash
-                    )
+                methods = extractor.extract_methods(
+                    filepath
                 )
-            })
 
-    save_complexity_cache(
-        updated_cache
+                for method in methods:
+
+                    cache_key = (
+
+                        cache_service.generate_cache_key(
+
+                            filepath,
+
+                            method["methodName"],
+
+                            method["methodCode"]
+
+                        )
+                    )
+
+                    active_cache_keys.add(
+                        cache_key
+                    )
+
+                    cached_result = (
+
+                        cache_service.get_cached_result(
+
+                            cache_key
+                        )
+                    )
+
+                    if cached_result:
+
+                        continue
+
+                    print(
+
+                        f"\nAnalyzing Method: "
+
+                        f"{method['methodName']}"
+                    )
+
+                    prompt = get_complexity_prompt(
+
+                        method_code=
+                            method["methodCode"],
+
+                        language=
+                            language,
+
+                        file_name=
+                            method["fileName"],
+
+                        method_name=
+                            method["methodName"]
+
+                )
+
+                    validated_payload = None
+
+                    for attempt in range(1, 4):
+
+                        try:
+
+                            raw_response = (
+
+                                generate_llm_response(
+
+                                    prompt
+                                )
+                            )
+
+                            parsed_json = (
+
+                                sanitize_and_parse_json(
+
+                                    raw_response
+                                )
+                            )
+                            
+                            for key in parsed_json:
+
+                                if isinstance(parsed_json[key], str):
+
+                                    parsed_json[key] = re.sub(
+
+                                        r"```(?:json)?",
+
+                                        "",
+
+                                        parsed_json[key]
+
+                                    ).strip()
+                            
+                            print("-" * 60)
+
+                            print(
+
+                                f"Method : {method['methodName']}"
+
+                            )
+
+                            print(
+
+                                f"Time Complexity : "
+
+                                f"{parsed_json.get('currentTimeComplexity','')}"
+
+                            )
+
+                            print("-" * 60)
+
+                            validated_payload = {
+
+                                "methodName": method["methodName"],
+
+                                "language": language,
+
+                                "currentTimeComplexity": parsed_json.get(
+                                    "currentTimeComplexity",
+                                    ""
+                                ),
+
+                                "reasoning": parsed_json.get(
+                                    "reasoning",
+                                    ""
+                                ),
+
+                                "suggestion": parsed_json.get(
+                                    "suggestion",
+                                    ""
+                                ),
+
+                                "suggestedCodeTemplate": parsed_json.get(
+                                    "suggestedCodeTemplate",
+                                    ""
+                                ),
+
+                                "estimatedImpact": parsed_json.get(
+                                    "estimatedImpact",
+                                    ""
+                                )
+                            }
+
+                            break
+
+                        except json.JSONDecodeError as e:
+
+                            print(
+
+                                f"Invalid JSON returned by AI : "
+
+                                f"{e}"
+
+                            )
+
+                        except Exception as e:
+
+                            print(
+
+                                f"{e}"
+
+                            )
+
+                    if validated_payload is None:
+
+                        continue
+
+                    cache_service.update_method_cache(
+
+                        cache_key=
+                            cache_key,
+
+                        filepath=
+                            filepath,
+
+                        filename=
+                            file,
+
+                        language=
+                            language,
+
+                        method_name=
+                            method["methodName"],
+
+                        method_code=
+                            method["methodCode"],
+
+                        ai_response=
+                            validated_payload
+                    )
+
+    cache_service.remove_deleted_methods(
+
+        active_cache_keys
     )
 
-    print("\n====================")
+    return writer.write_final_report(
 
-    print(
-        f"AI Calls Made: {total_ai_calls}"
+        cache_service.get_all_results()
     )
-
-    print(
-        f"Complexity Results: {len(final_results)}"
-    )
-
-    print("====================\n")
-
-    return {
-
-        "totalFiles":
-        len(final_results),
-
-        "results":
-        final_results
-    }

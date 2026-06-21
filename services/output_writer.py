@@ -1,117 +1,52 @@
-import json
-import os
+# services/output_writer.py
 
+import os
+import json
+from typing import Dict, Any
 
 OUTPUT_DIR = "output"
 
-
 def create_output_directory():
-
-    os.makedirs(
-        OUTPUT_DIR,
-        exist_ok=True
-    )
-
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def save_executive_output(data):
-
     create_output_directory()
-
     executive_schema = {
-
-        "executiveSummary": data.get(
-            "executiveSummary",
-            ""
-        ),
-
-        "coverageRiskInsight": data.get(
-            "coverageRiskInsight",
-            ""
-        ),
-
-        "codeQualityInsight": data.get(
-            "codeQualityInsight",
-            ""
-        ),
-
-        "securityInsight": data.get(
-            "securityInsight",
-            ""
-        ),
-
-        "recommendations": data.get(
-            "recommendations",
-            []
-        )
+        "executiveSummary": data.get("executiveSummary", ""),
+        "coverageRiskInsight": data.get("coverageRiskInsight", ""),
+        "codeQualityInsight": data.get("codeQualityInsight", ""),
+        "securityInsight": data.get("securityInsight", "")
     }
+    with open(os.path.join(OUTPUT_DIR, "executive_analysis.json"), "w", encoding="utf-8") as f:
+        json.dump(executive_schema, f, indent=4, ensure_ascii=False)
+    print("\nExecutive analysis saved successfully")
 
-    with open(
+def load_executive_output():
+    filepath = os.path.join(OUTPUT_DIR, "executive_analysis.json")
+    if not os.path.exists(filepath):
+        return {}
+    with open(filepath, "r", encoding="utf-8") as f:
+        return json.load(f)
 
-        os.path.join(
-            OUTPUT_DIR,
-            "executive_analysis.json"
-        ),
+_create_output_directory = create_output_directory
 
-        "w",
-
-        encoding="utf-8"
-
-    ) as f:
-
-        json.dump(
-
-            executive_schema,
-
-            f,
-
-            indent=4,
-
-            ensure_ascii=False
-        )
-
-    print(
-        "\nExecutive analysis saved successfully"
-    )
-
-
-def save_complexity_output(data):
+def save_complexity_output(data: dict) -> None:
 
     create_output_directory()
 
-    complexity_schema = {
-
-        "totalFiles": data.get(
-            "totalFiles",
-            0
-        ),
-
-        "results": data.get(
-            "results",
-            []
-        )
-    }
-
     with open(
-
         os.path.join(
             OUTPUT_DIR,
             "complexity_analysis.json"
         ),
-
         "w",
-
         encoding="utf-8"
-
     ) as f:
 
         json.dump(
-
-            complexity_schema,
-
+            data,
             f,
-
             indent=4,
-
             ensure_ascii=False
         )
 
@@ -119,59 +54,169 @@ def save_complexity_output(data):
         "\nComplexity analysis saved successfully"
     )
 
-
-def load_executive_output():
-
-    filepath = os.path.join(
-
-        OUTPUT_DIR,
-
-        "executive_analysis.json"
+def load_complexity_output() -> dict:
+    return _read_json(
+        "complexity_analysis.json",
+        default={"totalMethods": 0, "highComplexityMethods": 0, "methods": []}
     )
 
-    if not os.path.exists(filepath):
+def _write_json(filename: str, data) -> None:
+    path = os.path.join(OUTPUT_DIR, filename)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
 
-        return {}
+def _read_json(filename: str, default):
+    path = os.path.join(OUTPUT_DIR, filename)
+    if not os.path.exists(path):
+        return default
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"[READ ERROR] {path}: {e}")
+        return default
 
-    with open(
-
-        filepath,
-
-        "r",
-
-        encoding="utf-8"
-
-    ) as f:
-
-        return json.load(f)
+def save_bug_output(data):
+    create_output_directory()
+    with open(os.path.join(OUTPUT_DIR, "bug_analysis.json"), "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+    print("\nBug analysis saved successfully")
 
 
-def load_complexity_output():
+# =====================================================================
+# TIME COMPLEXITY ENGINE WRITER ADDITION (HIERARCHICAL RESTRUCTURE)
+# =====================================================================
+class OutputWriterService:
 
-    filepath = os.path.join(
+    def __init__(
+        self,
+        output_path: str = "output/complexity_output.json"
+    ):
+        self.output_path = output_path
 
-        OUTPUT_DIR,
+    def write_final_report(
+        self,
+        processed_cache: Dict[str, Any]
+    ) -> Dict[str, Any]:
 
-        "complexity_analysis.json"
-    )
+        total_methods = 0
 
-    if not os.path.exists(filepath):
+        methods_output = []
 
-        return {
+        for _, cache_item in processed_cache.items():
 
-            "totalFiles": 0,
+            payload = cache_item.get(
+                "payload",
+                {}
+            )
 
-            "results": []
+            if not payload:
+                continue
+
+            total_methods += 1
+
+            methods_output.append({
+
+                "fileName":
+
+                    cache_item.get(
+                        "filename",
+                        ""
+                    ),
+
+                "language":
+
+                    payload.get(
+                        "language",
+                        ""
+                    ),
+
+                "methodName":
+
+                    payload.get(
+                        "methodName",
+                        ""
+                    ),
+
+                "currentTimeComplexity":
+
+                    payload.get(
+                        "currentTimeComplexity",
+                        ""
+                    ),
+
+                "reasoning":
+
+                    payload.get(
+                        "reasoning",
+                        ""
+                    ),
+
+                "suggestedCodeTemplate":
+
+                    payload.get(
+                        "suggestedCodeTemplate",
+                        ""
+                    ),
+
+                "estimatedImpact":
+
+                    payload.get(
+                        "estimatedImpact",
+                        ""
+                    )
+            })
+
+        final_output = {
+
+            "totalMethods":
+
+                total_methods,
+
+            "methods":
+
+                methods_output
         }
 
-    with open(
+        try:
 
-        filepath,
+            os.makedirs(
 
-        "r",
+                os.path.dirname(
+                    self.output_path
+                ),
 
-        encoding="utf-8"
+                exist_ok=True
+            )
 
-    ) as f:
+            with open(
 
-        return json.load(f)
+                self.output_path,
+
+                "w",
+
+                encoding="utf-8"
+
+            ) as f:
+
+                json.dump(
+
+                    final_output,
+
+                    f,
+
+                    indent=4,
+
+                    ensure_ascii=False
+                )
+
+        except Exception as e:
+
+            print(
+
+                f"[-] Complexity Output Error: "
+
+                f"{e}"
+            )
+
+        return final_output
