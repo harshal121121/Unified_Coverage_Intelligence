@@ -466,9 +466,5 @@ http://localhost:5173
 
 ---
 
-# Authors
 
-BMC Software Internship Project
-
-Unified Code Coverage Dashboard
 

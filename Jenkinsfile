@@ -19,6 +19,8 @@ pipeline {
         SONAR_TOKEN = credentials('SonarCloud-token')
         SONAR_PROJECT_KEY = "${params.SONAR_PROJECT_KEY}"
         SONAR_ORG_KEY = "${params.SONAR_ORG_KEY}"
+        AI_ENGINE_HOST = "${AI_ENGINE_HOST}"
+        AI_ENGINE_PATH = "${AI_ENGINE_PATH}"
     }
 
     stages {
@@ -210,5 +212,78 @@ pipeline {
                 }
             }
         }
+        stage('Run AI Engine') {
+
+            steps {
+
+                script {
+
+                    echo "Starting AI Engine Execution..."
+
+                    if (env.AI_ENGINE_MODE == 'LOCAL') {
+
+                        echo "Executing AI Engine on Local Machine"
+
+                        bat """
+                            if not exist "${env.AI_ENGINE_PATH}\\data" mkdir "${env.AI_ENGINE_PATH}\\data"
+
+                            copy /Y unified_master_report.json "${env.AI_ENGINE_PATH}\\data\\coverage.json"
+
+                            cd /d "${env.AI_ENGINE_PATH}"
+
+                            call venv\\Scripts\\activate
+
+                            python app.py
+                        """
+
+                    } else {
+
+                        echo "Executing AI Engine on Remote VM"
+
+                        withCredentials([
+                            usernamePassword(
+                                credentialsId: 'ai-engine-creds',
+                                usernameVariable: 'AI_USER',
+                                passwordVariable: 'AI_PASS'
+                            )
+                        ]) {
+
+                            bat """
+                                scp -o StrictHostKeyChecking=no ^
+                                unified_master_report.json ^
+                                %AI_USER%@${env.AI_ENGINE_HOST}:"${env.AI_ENGINE_PATH}/data/coverage.json"
+                            """
+
+                            def remote = [:]
+
+                            remote.name = "AI_ENGINE"
+
+                            remote.host = env.AI_ENGINE_HOST
+
+                            remote.user = AI_USER
+
+                            remote.password = AI_PASS
+
+                            remote.allowAnyHosts = true
+
+                            sshCommand(
+                                remote: remote,
+                                command: """
+                                    cd /d "${env.AI_ENGINE_PATH}"
+                                    call venv\\Scripts\\activate
+                                    python app.py
+                                """
+                            )
+                        }
+                    }
+
+                    echo "AI Engine Execution Completed."
+
+                }
+
+            }
+
+        }
+
     }
 }
