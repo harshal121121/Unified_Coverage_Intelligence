@@ -1,0 +1,39 @@
+# dependencies
+node_modules/
+
+# production build
+dist/
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Vite
+.vite/
+
+# cache
+.cache/
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
