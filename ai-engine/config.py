@@ -1,0 +1,21 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+MODEL_NAME = os.getenv("MODEL_NAME")
+OLLAMA_URL = os.getenv("OLLAMA_URL")
+
+CHROMA_DB_PATH = os.getenv("CHROMA_DB_PATH")
+CHROMA_COLLECTION = os.getenv("CHROMA_COLLECTION")
+
+EXECUTIVE_API_URL = os.getenv("EXECUTIVE_API_URL")
+COMPLEXITY_UPLOAD_API = os.getenv("COMPLEXITY_UPLOAD_API")
+COMPLEXITY_RESULTS_API = os.getenv("COMPLEXITY_RESULTS_API")
+BUG_ANALYSIS_API = os.getenv("BUG_ANALYSIS_API")
+
+JAVA_REPO_URL = os.getenv("JAVA_REPO_URL")
+CPP_REPO_URL = os.getenv("CPP_REPO_URL")
+
+HASH_CACHE = os.getenv("HASH_CACHE")
+COVERAGE_REPORT_PATH = os.getenv("COVERAGE_REPORT_PATH")

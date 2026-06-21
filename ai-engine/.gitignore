@@ -1,0 +1,43 @@
+# Python
+
+**pycache**/
+*.pyc
+
+# Virtual Env
+
+venv/
+env/
+
+# IDE
+
+.vscode/
+.idea/
+
+# Cache
+
+cache/
+
+# Output
+
+output/
+
+# ChromaDB
+
+chroma_db/
+
+# Cloned Repositories
+
+repositories/
+
+# Environment
+
+.env
+
+# Logs
+
+*.log
+
+# OS
+
+.DS_Store
+Thumbs.db
