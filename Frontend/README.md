@@ -1,73 +1,72 @@
-# React + TypeScript + Vite
+# Unified Code Coverage Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend application for the Unified Code Coverage project. It provides a user interface to view and analyze code coverage metrics, quality gates, and related data.
 
-Currently, two official plugins are available:
+## 🏗️ Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project follows a modular structure organized within the `src` directory:
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+src/
+├── api/          # API integration and service functions (e.g., Axios calls)
+├── assets/       # Static assets like images, icons, etc.
+├── components/   # Reusable UI components used across different pages
+├── layouts/      # Layout components (e.g., Header, Sidebar, Main Content area)
+├── pages/        # Page-level components corresponding to different routes (e.g., QualityGate)
+├── routes/       # Application routing configuration (React Router)
+├── types/        # TypeScript interfaces and type definitions
+├── App.tsx       # Main application component
+├── index.css     # Global CSS and Tailwind CSS directives
+└── main.tsx      # Application entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Technologies Used
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The application is built using modern web development technologies:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+*   **Core Framework:** [React 19](https://react.dev/)
+*   **Language:** [TypeScript](https://www.typescriptlang.org/) for static typing
+*   **Build Tool:** [Vite](https://vitejs.dev/) for fast development and optimized builds
+*   **Routing:** [React Router DOM](https://reactrouter.com/)
+*   **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) for utility-first styling
+*   **Data Visualization:** [Recharts](https://recharts.org/) for rendering charts and graphs
+*   **Animations:** [Framer Motion](https://www.framer.com/motion/) for fluid UI animations
+*   **Icons:** [Lucide React](https://lucide.dev/)
+*   **HTTP Client:** [Axios](https://axios-http.com/) for making API requests
+*   **Tables:** [TanStack React Table](https://tanstack.com/table/v8) for advanced data grids
+
+## 🚀 Commands to Run
+
+Make sure you have Node.js and npm installed.
+
+### 1. Install Dependencies
+Before running the application for the first time, install the required packages:
+```bash
+npm install
+```
+
+### 2. Development Server
+To start the application in development mode with Hot Module Replacement (HMR):
+```bash
+npm run dev
+```
+This will typically start the server at `http://localhost:5173/`.
+
+### 3. Build for Production
+To compile the TypeScript code and bundle the application for production:
+```bash
+npm run build
+```
+The output will be generated in the `dist` directory.
+
+### 4. Preview Production Build
+To preview the generated production build locally:
+```bash
+npm run preview
+```
+
+### 5. Linting
+To run ESLint and check for code quality and style issues:
+```bash
+npm run lint
 ```
